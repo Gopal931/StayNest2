@@ -77,7 +77,9 @@
 <div class="card col-6">
 <div class="card-body review-card p-3" > 
 <h5 class="card-title">@<%= review.author.username%></h5>
-<p class="starability-result card-text" data-rating="<%=review.rating%>">
+<p class="starability-result card-text" data-rating="<%=review.rating%>"
+   style="display: inline-block; max-width: 100%; overflow-x: auto; white-space: nowrap; box-sizing: border-box;"
+  >
   </p>
 <p class="card-text"><%=review.comment%></p>
 

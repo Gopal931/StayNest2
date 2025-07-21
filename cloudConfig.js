@@ -12,7 +12,7 @@ const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'StayNest_DEV',
-     allowed_formats: ['jpeg', 'png', 'jpg'], // supports promises as well
+     allowed_formats: ['jpeg', 'png', 'jpg','webp'], // supports promises as well
    
   },
 });

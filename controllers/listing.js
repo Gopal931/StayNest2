@@ -25,9 +25,9 @@ module.exports.createListing=async(req,res,next)=>{
       const filenamee=req.file.filename;
    const { image, ...rest } = req.body;
    const newListing = new Listing(rest);
-  // if (image && image.trim() !== '') {
+  
   newListing.image = {
-    //url: image.trim(),
+    
     url:urll,
     //filename: 'custom-url-upload'  // optional, or leave undefined
     filename:filenamee,
