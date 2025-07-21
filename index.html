@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StayNest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .content p {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 1rem;
+    }
+
+    .card .info h3 {
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+
+    .card .info p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to StayNest</h1>
+  </header>
+
+  <section class="content">
+    <p>
+      Discover cozy stays, curated homes, and peaceful getaways across cities and countrysides. StayNest makes your travel experience more personal and comfortable.
+    </p>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom: 1rem;">Featured Stays</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1" alt="Stay 1">
+        <div class="info">
+          <h3>Modern Apartment</h3>
+          <p>Located in the heart of the city with amazing amenities and scenic views.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154780-948b86d1c299" alt="Stay 2">
+        <div class="info">
+          <h3>Beachside Villa</h3>
+          <p>Wake up to the sound of waves and relax in pure comfort near the shore.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed" alt="Stay 3">
+        <div class="info">
+          <h3>Mountain Cabin</h3>
+          <p>Perfect for nature lovers seeking peace and fresh mountain air.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom: 1rem;">Why Choose Us</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="info">
+          <h3>Verified Hosts</h3>
+          <p>All listings are verified to ensure trust, safety, and great hospitality.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3>Flexible Booking</h3>
+          <p>Book instantly, modify easily, and enjoy worry-free cancellations.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3>24/7 Support</h3>
+          <p>Our team is here to help you anytime during your stay or booking process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom: 1rem;">What Guests Say</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="info">
+          <h3>Priya S.</h3>
+          <p>"Loved my beach villa stay! It was clean, beautiful, and peaceful."</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3>Rohan M.</h3>
+          <p>"Booking was smooth and the cabin in Manali was exactly as shown."</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3>Anjali T.</h3>
+          <p>"Amazing experience with StayNest. The host was super friendly!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 StayNest. All rights reserved.
+  </footer>
+</body>
+</html>
